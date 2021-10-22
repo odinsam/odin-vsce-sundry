@@ -1,0 +1,5 @@
+{
+    "sundry.transCamel.trans.commandTitle": "字符串驼峰转换",
+    "sundry.transCamel.transBigCamel.commandTitle": "转大驼峰",
+    "sundry.transCamel.transSmallCamel.commandTitle": "转小驼峰"
+}

@@ -1,0 +1,108 @@
+{
+    "name": "odin-sundry",
+    "displayName": "odin-sundry",
+    "description": "vscode sundry extensions ",
+    "version": "1.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/odinsam/odin-vsce-sundry"
+    },
+    "publisher": "odinsam",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/odinsam/odin-vsce-sundry/issues"
+    },
+    "homepage": "https://github.com/odinsam/odin-vsce-sundry#readme",
+    "activationEvents": [
+        "onCommand:sundry.transCamel.transBigCamel",
+        "onCommand:sundry.transCamel.transSmallCamel"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "sundry.transCamel.transBigCamel",
+                    "group": "z-command@2"
+                },
+                {
+                    "command": "sundry.transCamel.transSmallCamel",
+                    "group": "z-command@1"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "sundry.transCamel.transBigCamel",
+                "category": "Sundry.transCamel",
+                "title": "%sundry.transCamel.transBigCamel.commandTitle%"
+            },
+            {
+                "command": "sundry.transCamel.transSmallCamel",
+                "category": "Sundry.transCamel",
+                "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "sundry.transCamel.transBigCamel",
+                "key": "cmd+t cmd+b"
+            },
+            {
+                "command": "sundry.transCamel.transSmallCamel",
+                "key": "cmd+t cmd+s"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "%sundry.codelinestatistics.configuration.Title%",
+            "properties": {
+                "sundry.transCamel": {
+                    "type": "array",
+                    "default": [
+                        " ",
+                        "-",
+                        ","
+                    ],
+                    "items": [
+                        " ",
+                        "-",
+                        ","
+                    ]
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "yarn run compile && yarn run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js",
+        "build": "vsce package",
+        "release": "standard-version",
+        "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.50.0",
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.2.2",
+        "@types/node": "14.x",
+        "eslint": "^7.27.0",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "glob": "^7.1.7",
+        "mocha": "^8.4.0",
+        "typescript": "^4.3.2",
+        "vscode-test": "^1.5.2"
+    }
+}
