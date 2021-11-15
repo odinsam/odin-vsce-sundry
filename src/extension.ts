@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-
+import 'ts-replace-all';
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
         vscode.commands.registerCommand(
@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
                     .getConfiguration()
                     .get<Array<string>>('sundry.transCamel');
                 ary?.map((s) => {
-                    str = str.replace(s, ' ');
+                    str = str.replaceAll(s, ' ');
                 });
                 const aryStr = str.split(' ');
                 let buildStr = '';
@@ -40,7 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
                     .getConfiguration()
                     .get<Array<string>>('sundry.transCamel');
                 ary?.map((s) => {
-                    str = str.replace(s, ' ');
+                    str = str.replaceAll(s, ' ');
                 });
                 const aryStr = str.split(' ');
                 let buildStr = '';

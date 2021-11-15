@@ -11,12 +11,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
 const vscode = require("vscode");
+require("ts-replace-all");
 function activate(context) {
     context.subscriptions.push(vscode.commands.registerCommand('sundry.transCamel.transBigCamel', () => __awaiter(this, void 0, void 0, function* () {
         let str = yield vscode.env.clipboard.readText();
         var ary = vscode.workspace
             .getConfiguration()
             .get('sundry.transCamel');
+        var testStr = 'abacadae';
+        var tsr = testStr.replaceAll('a', '1');
+        vscode.window.showInformationMessage(tsr);
         ary === null || ary === void 0 ? void 0 : ary.map((s) => {
             str = str.replace(s, ' ');
         });

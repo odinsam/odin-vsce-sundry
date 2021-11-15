@@ -1,4 +1,2 @@
-node_modules/*
-out/
-package-lock.json
-src/test/
+/node_modules/
+/out/
