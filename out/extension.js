@@ -18,11 +18,8 @@ function activate(context) {
         var ary = vscode.workspace
             .getConfiguration()
             .get('sundry.transCamel');
-        var testStr = 'abacadae';
-        var tsr = testStr.replaceAll('a', '1');
-        vscode.window.showInformationMessage(tsr);
         ary === null || ary === void 0 ? void 0 : ary.map((s) => {
-            str = str.replace(s, ' ');
+            str = str.replaceAll(s, ' ');
         });
         const aryStr = str.split(' ');
         let buildStr = '';
@@ -43,7 +40,7 @@ function activate(context) {
             .getConfiguration()
             .get('sundry.transCamel');
         ary === null || ary === void 0 ? void 0 : ary.map((s) => {
-            str = str.replace(s, ' ');
+            str = str.replaceAll(s, ' ');
         });
         const aryStr = str.split(' ');
         let buildStr = '';
