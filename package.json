@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "1.3.3",
+    "version": "2.0.0",
     "engines": {
         "vscode": "^1.50.0"
     },
@@ -23,7 +23,8 @@
     "homepage": "https://github.com/odinsam/odin-vsce-sundry#readme",
     "activationEvents": [
         "onCommand:sundry.transCamel.transBigCamel",
-        "onCommand:sundry.transCamel.transSmallCamel"
+        "onCommand:sundry.transCamel.transSmallCamel",
+        "onCommand:sundry.generateFile.addFileByTemplate"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -37,6 +38,11 @@
                     "command": "sundry.transCamel.transSmallCamel",
                     "group": "z-command@1"
                 }
+            ],
+            "explorer/context": [
+                {
+                    "command": "sundry.generateFile.addFileByTemplate"
+                }
             ]
         },
         "commands": [
@@ -49,6 +55,11 @@
                 "command": "sundry.transCamel.transSmallCamel",
                 "category": "Sundry.transCamel",
                 "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
+            },
+            {
+                "command": "sundry.generateFile.addFileByTemplate",
+                "category": "sundry.generateFile",
+                "title": "%sundry.generateFile.addFileByTemplate.Title%"
             }
         ],
         "keybindings": [
@@ -59,24 +70,50 @@
             {
                 "command": "sundry.transCamel.transSmallCamel",
                 "key": "cmd+t cmd+s"
+            },
+            {
+                "command": "sundry.generateFile.addFileByTemplate",
+                "key": "cmd+d cmd+a"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "%sundry.codelinestatistics.configuration.Title%",
+            "title": "%sundry.configuration.title%",
             "properties": {
                 "sundry.transCamel": {
                     "type": "array",
                     "default": [
                         " ",
                         "-",
-                        ","
+                        ",",
+                        "."
                     ],
                     "items": [
                         " ",
                         "-",
-                        ","
-                    ]
+                        ",",
+                        "."
+                    ],
+                    "description": "%sundry.configuration.transCamel.deprecationMessage%"
+                },
+                "sundry.generateFile.TemplateFiles": {
+                    "type": "string",
+                    "default": "",
+                    "description": "%sundry.configuration.generateFile.TemplateFiles.description%"
+                },
+                "sundry.generateFile.TemplatePlaceHold": {
+                    "type": "array",
+                    "default": [
+                        ""
+                    ],
+                    "description": "%sundry.configuration.generateFile.TemplatePlaceHold.description%"
+                },
+                "sundry.generateFile.TemplatePlaceHoldValue": {
+                    "type": "array",
+                    "default": [
+                        ""
+                    ],
+                    "description": "%sundry.configuration.generateFile.TemplatePlaceHoldValue.description%"
                 }
             }
         }
@@ -107,6 +144,7 @@
         "vscode-test": "^1.5.2"
     },
     "dependencies": {
+        "linqts": "^1.14.4",
         "ts-replace-all": "^1.0.0"
     }
 }
