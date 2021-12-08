@@ -1,3 +1,12 @@
+## <small>2.0.2 (2021-12-08)</small>
+
+* chore(release): 2.0.2 ([3079a88](https://github.com/odinsam/odin-vsce-sundry/commit/3079a88))
+* 🐞 fix: 修复占位符替换的问题 (odinsam) ([66b0002](https://github.com/odinsam/odin-vsce-sundry/commit/66b0002))
+* 📃 docs:  () ([2f79866](https://github.com/odinsam/odin-vsce-sundry/commit/2f79866))
+* 📃 docs: 修改文档 () ([443b5de](https://github.com/odinsam/odin-vsce-sundry/commit/443b5de))
+
+
+
 ## <small>2.0.1 (2021-12-07)</small>
 
 * chore(release): 2.0.1 ([72b0f34](https://github.com/odinsam/odin-vsce-sundry/commit/72b0f34))
