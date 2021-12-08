@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "engines": {
         "vscode": "^1.50.0"
     },
@@ -70,10 +70,6 @@
             {
                 "command": "sundry.transCamel.transSmallCamel",
                 "key": "cmd+t cmd+s"
-            },
-            {
-                "command": "sundry.generateFile.addFileByTemplate",
-                "key": "cmd+d cmd+a"
             }
         ],
         "configuration": {

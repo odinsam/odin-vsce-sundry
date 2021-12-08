@@ -67,12 +67,12 @@ const addFileByTemplate = async (
                                 const ns = nsArray.ToArray().join('.');
                                 //替换命名空间
                                 templateFileContent =
-                                    templateFileContent.replace(
+                                    templateFileContent.replaceAll(
                                         '$namespace$',
                                         ns
                                     );
                                 templateFileContent =
-                                    templateFileContent.replace(
+                                    templateFileContent.replaceAll(
                                         '$className$',
                                         addFileName
                                     );
