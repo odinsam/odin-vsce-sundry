@@ -1,5 +1,11 @@
 {
     "sundry.transCamel.trans.commandTitle": "字符串驼峰转换",
     "sundry.transCamel.transBigCamel.commandTitle": "转大驼峰",
-    "sundry.transCamel.transSmallCamel.commandTitle": "转小驼峰"
+    "sundry.transCamel.transSmallCamel.commandTitle": "转小驼峰",
+    "sundry.generateFile.addFileByTemplate.Title": "依据模板文件添加文件",
+    "sundry.configuration.title": "OdinSam 杂项插件配置",
+    "sundry.configuration.transCamel.deprecationMessage": "驼峰大小写转换配置,默认分隔符为: 空格 - , .",
+    "sundry.configuration.generateFile.TemplateFiles.description": "模板文件路径",
+    "sundry.configuration.generateFile.TemplatePlaceHold.description": "模板占位符。string 数组",
+    "sundry.configuration.generateFile.TemplatePlaceHoldValue.description": "模板占位符对应的值。string 数组"
 }
