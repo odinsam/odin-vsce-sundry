@@ -70,10 +70,6 @@
             {
                 "command": "sundry.transCamel.transSmallCamel",
                 "key": "cmd+t cmd+s"
-            },
-            {
-                "command": "sundry.generateFile.addFileByTemplate",
-                "key": "cmd+d cmd+a"
             }
         ],
         "configuration": {
