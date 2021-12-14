@@ -7,5 +7,6 @@
     "sundry.configuration.transCamel.deprecationMessage": "transCamel config,default split char is space - , .",
     "sundry.configuration.generateFile.TemplateFiles.description": "TemplateFiles path",
     "sundry.configuration.generateFile.TemplatePlaceHold.description": "Template PlaceHold.type is string array.",
-    "sundry.configuration.generateFile.TemplatePlaceHoldValue.description": "Template PlaceHold Value.type is string array."
+    "sundry.configuration.generateFile.TemplatePlaceHoldValue.description": "Template PlaceHold Value.type is string array.",
+    "sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting": "db connection settings"
 }

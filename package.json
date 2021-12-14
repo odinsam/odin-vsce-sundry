@@ -95,8 +95,19 @@
                 },
                 "sundry.generateFile.TemplateFiles": {
                     "type": "string",
-                    "default": "",
                     "description": "%sundry.configuration.generateFile.TemplateFiles.description%"
+                },
+                "sundry.generateFile.DbConnectionSetting": {
+                    "type": "object",
+                    "default": {
+                        "dbType": "mySql",
+                        "host": "121.42.15.95",
+                        "port": 3306,
+                        "userName": "root",
+                        "pwd": "173mysqlodincore~",
+                        "dataBase": "dbOdinCore"
+                    },
+                    "description": "%sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting%"
                 },
                 "sundry.generateFile.TemplatePlaceHold": {
                     "type": "array",
@@ -142,6 +153,8 @@
     },
     "dependencies": {
         "linqts": "^1.14.4",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.3.3",
         "ts-replace-all": "^1.0.0"
     }
 }
