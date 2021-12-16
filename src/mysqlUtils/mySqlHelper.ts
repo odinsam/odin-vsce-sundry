@@ -1,123 +1,37 @@
 import { error } from 'console';
 import dbConnectionSetting from '../Models/dbConnectionSetting';
 import resultModel from '../Models/resultModel';
+import connPool from './connPool';
 var mysql = require('mysql2');
 
 export default class mySqlHelper {
     dbSettings: dbConnectionSetting | null = null;
-    conn: any;
+    connPool: any;
+    pool: any;
     /**
      *
      */
     constructor(dbSettings: dbConnectionSetting, conn?: any) {
         this.dbSettings = dbSettings;
-        this.conn = mysql.createConnection({
-            host: this.dbSettings!.host,
-            user: this.dbSettings!.port,
-            password: this.dbSettings!.pwd,
-            port: this.dbSettings!.port,
-            database: this.dbSettings!.dataBase,
-            insecureAuth: true
-        });
+        this.pool = connPool(dbSettings);
     }
 
-    Query = (sql: string, sqlParams?: any[]): resultModel => {
-        this.conn.connect((err: any) => {
-            if (!err) throw err;
-        });
-        var result = this.conn.query(
-            sql,
-            sqlParams,
-            function (err: any, result: any) {
-                if (err) {
-                    console.log('[SELECT ERROR] - ', err.message);
-                    return new resultModel({
-                        code: 'err-db-select',
-                        message: '数据库查询失败',
-                        error: err
-                    });
-                }
-                return new resultModel({
-                    data: result
-                });
+    Query = (sql: string, options: any, callback: any) => {
+        this.pool.getConnection(function (err: any, conn: any) {
+            if (err) {
+                callback(err, null, null);
+            } else {
+                conn.query(
+                    sql,
+                    options,
+                    function (err: any, results: any, fields: any) {
+                        //事件驱动回调
+                        callback(err, results, fields);
+                    }
+                );
+                //释放连接，需要注意的是连接释放需要在此处释放，而不是在查询回调里面释放
+                conn.release();
             }
-        );
-        this.conn.end();
-        return result;
-    };
-
-    Insert = (sql: string, sqlParams?: any[]): resultModel => {
-        this.conn.connect((err: any) => {
-            if (!err) throw err;
         });
-        var result = this.conn.query(
-            sql,
-            sqlParams,
-            function (err: any, result: any) {
-                if (err) {
-                    console.log('[INSERT ERROR] - ', err.message);
-                    return new resultModel({
-                        code: 'err-db-insert',
-                        message: '数据库插入失败',
-                        error: err
-                    });
-                }
-                return new resultModel({
-                    data: result.OkPacket
-                });
-            }
-        );
-        this.conn.end();
-        return result;
-    };
-
-    Update = (sql: string, sqlParams?: any[]): resultModel => {
-        this.conn.connect((err: any) => {
-            if (!err) throw err;
-        });
-        var result = this.conn.query(
-            sql,
-            sqlParams,
-            function (err: any, result: any) {
-                if (err) {
-                    console.log('[UPDATE ERROR] - ', err.message);
-                    return new resultModel({
-                        code: 'err-db-update',
-                        message: '数据库更新失败',
-                        error: err
-                    });
-                }
-                return new resultModel({
-                    data: result.affectedRows
-                });
-            }
-        );
-        this.conn.end();
-        return result;
-    };
-
-    Delete = (sql: string, sqlParams?: any[]): resultModel => {
-        this.conn.connect((err: any) => {
-            if (!err) throw err;
-        });
-        var result = this.conn.query(
-            sql,
-            sqlParams,
-            function (err: any, result: any) {
-                if (err) {
-                    console.log('[DELETE ERROR] - ', err.message);
-                    return new resultModel({
-                        code: 'err-db-delete',
-                        message: '数据库删除失败',
-                        error: err
-                    });
-                }
-                return new resultModel({
-                    data: result.affectedRows
-                });
-            }
-        );
-        this.conn.end();
-        return result;
     };
 }
