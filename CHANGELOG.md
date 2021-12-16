@@ -1,8 +1,9 @@
-# Changelog
+## <small>2.1.1 (2021-12-16)</small>
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+* chore(release): 2.1.1 ([bea6444](https://github.com/odinsam/odin-vsce-sundry/commit/bea6444))
+* ✨ feat: add DbModel generate (odinsam) ([9eaa538](https://github.com/odinsam/odin-vsce-sundry/commit/9eaa538))
 
-### [2.1.1](https://github.com/odinsam/odin-vsce-sundry/compare/v2.1.0...v2.1.1) (2021-12-16)
+
 
 ## 2.1.0 (2021-12-16)
 
@@ -46,3 +47,6 @@ All notable changes to this project will be documented in this file. See [standa
 * Initial commit ([872ab88](https://github.com/odinsam/odin-vsce-sundry/commit/872ab88))
 * no message ([44c569a](https://github.com/odinsam/odin-vsce-sundry/commit/44c569a))
 * docs: [*] init ([8cdf8bd](https://github.com/odinsam/odin-vsce-sundry/commit/8cdf8bd))
+
+
+
