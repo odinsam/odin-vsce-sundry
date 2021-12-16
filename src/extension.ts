@@ -3,6 +3,7 @@ import 'ts-replace-all';
 import transBigCamel from './transCamelUtils/transBigCamel';
 import transSmallCamel from './transCamelUtils/transSmallCamel';
 import addFileByTemplate from './generateFile/addFileByTemplate';
+import { generateDbModels } from './generateFile/generateDbModels';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -23,6 +24,9 @@ export function activate(context: vscode.ExtensionContext) {
         )
     );
 
+    /**
+     *
+     */
     context.subscriptions.push(
         vscode.commands.registerCommand(
             'sundry.generateFile.addFileByTemplate',
@@ -36,6 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
                             'ApiService',
                             'IAppService',
                             'AppService'
+                            // 'DbModel'
                         ],
                         {
                             //用于使选择器接受多个选择，如果为true，则结果为拾取数组。可选
@@ -56,37 +61,42 @@ export function activate(context: vscode.ExtensionContext) {
                         if (!msg) {
                             return;
                         } else {
-                            const currentUri = uri.toString();
-                            // 添加文件类型
-                            const addFileType = msg;
-                            vscode.window
-                                .showInputBox({
-                                    // 这个对象中所有参数都是可选参数
-                                    password: false, // 输入内容是否是密码
-                                    ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
-                                    placeHolder: '请输入IApiService接口名称' // 在输入框内的提示信息
-                                })
-                                .then(function (msg) {
-                                    if (!msg) {
-                                        return;
-                                    } else {
-                                        // 添加文件名称
-                                        const addFileName: string = msg!;
-                                        let uriPath = currentUri
-                                            .toString()
-                                            .startsWith('file://')
-                                            ? currentUri
-                                                  .toString()
-                                                  .replace('file://', '')
-                                            : currentUri.toString();
-                                        // 生成 文件
-                                        addFileByTemplate(
-                                            addFileType,
-                                            addFileName,
-                                            uriPath
-                                        );
-                                    }
-                                });
+                            if (msg != 'DbModel') {
+                                const currentUri = uri.toString();
+                                // 添加文件类型
+                                const addFileType = msg;
+                                vscode.window
+                                    .showInputBox({
+                                        // 这个对象中所有参数都是可选参数
+                                        password: false, // 输入内容是否是密码
+                                        ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
+                                        placeHolder:
+                                            '请输入对应的 Controller/Interface/class 名称' // 在输入框内的提示信息
+                                    })
+                                    .then(function (msg) {
+                                        if (msg == undefined || msg == null) {
+                                            return;
+                                        } else {
+                                            // 添加文件名称
+                                            const addFileName: string = msg!;
+                                            let uriPath = currentUri
+                                                .toString()
+                                                .startsWith('file://')
+                                                ? currentUri
+                                                      .toString()
+                                                      .replace('file://', '')
+                                                : currentUri.toString();
+                                            // 生成 文件
+                                            addFileByTemplate(
+                                                addFileType,
+                                                addFileName,
+                                                uriPath
+                                            );
+                                        }
+                                    });
+                            } else {
+                                generateDbModels(uri);
+                            }
                         }
                     });
             }

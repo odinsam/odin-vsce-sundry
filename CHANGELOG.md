@@ -1,3 +1,20 @@
+## <small>2.1.1 (2021-12-16)</small>
+
+* chore(release): 2.1.1 ([bea6444](https://github.com/odinsam/odin-vsce-sundry/commit/bea6444))
+* ✨ feat: add DbModel generate (odinsam) ([9eaa538](https://github.com/odinsam/odin-vsce-sundry/commit/9eaa538))
+
+
+
+## 2.1.0 (2021-12-16)
+
+* chore(release): 2.1.0 ([b0081bb](https://github.com/odinsam/odin-vsce-sundry/commit/b0081bb))
+* ✨ feat: 增加模型创建 (odinsam) ([7ae3f39](https://github.com/odinsam/odin-vsce-sundry/commit/7ae3f39))
+* 📃 docs: changelog (odinsam) ([b7cc468](https://github.com/odinsam/odin-vsce-sundry/commit/b7cc468))
+* feat: [odinsam] add icon ([ca10fa6](https://github.com/odinsam/odin-vsce-sundry/commit/ca10fa6))
+* feat: [odinsam] change logo ([19880dc](https://github.com/odinsam/odin-vsce-sundry/commit/19880dc))
+
+
+
 ## <small>2.0.2 (2021-12-08)</small>
 
 * chore(release): 2.0.2 ([3079a88](https://github.com/odinsam/odin-vsce-sundry/commit/3079a88))
