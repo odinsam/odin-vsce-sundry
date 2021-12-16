@@ -1,3 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.1.0](https://github.com/odinsam/odin-vsce-sundry/compare/v2.0.2...v2.1.0) (2021-12-16)
+
+
+### Features
+
+* [odinsam] add icon ([ca10fa6](https://github.com/odinsam/odin-vsce-sundry/commit/ca10fa6744e997d337ad7adbb306d0ad3e325151))
+* [odinsam] change logo ([19880dc](https://github.com/odinsam/odin-vsce-sundry/commit/19880dcd5d098f0742e9e81e1146402040ffe9a0))
+
 ## <small>2.0.2 (2021-12-08)</small>
 
 * chore(release): 2.0.2 ([3079a88](https://github.com/odinsam/odin-vsce-sundry/commit/3079a88))
@@ -30,6 +42,3 @@
 * Initial commit ([872ab88](https://github.com/odinsam/odin-vsce-sundry/commit/872ab88))
 * no message ([44c569a](https://github.com/odinsam/odin-vsce-sundry/commit/44c569a))
 * docs: [*] init ([8cdf8bd](https://github.com/odinsam/odin-vsce-sundry/commit/8cdf8bd))
-
-
-
