@@ -101,11 +101,11 @@
                     "type": "object",
                     "default": {
                         "dbType": "mySql",
-                        "host": "121.42.15.95",
+                        "host": "x.x.x.x",
                         "port": 3306,
                         "userName": "root",
-                        "pwd": "173mysqlodincore~",
-                        "dataBase": "dbOdinCore"
+                        "pwd": "xxxxx",
+                        "dataBase": "xxxx"
                     },
                     "description": "%sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting%"
                 },

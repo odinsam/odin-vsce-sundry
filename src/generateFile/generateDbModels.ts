@@ -51,6 +51,8 @@ const generateDbModels = (currentUri: string) => {
 
                     const prefixs = new List<string>(prefixSuffix?.prefix);
                     const suffixs = new List<string>(prefixSuffix?.suffix);
+                    const modelPrefix = prefixSuffix?.addPrefix;
+                    const modelSuffix = prefixSuffix?.addSuffix;
                     //前缀 后缀处理
                     msg?.map((m, index) => {
                         tables.Add(m);
@@ -84,6 +86,12 @@ const generateDbModels = (currentUri: string) => {
                         });
 
                         msg[index] = result.join('');
+                        if (modelPrefix) {
+                            msg[index] = modelPrefix + msg[index];
+                        }
+                        if (modelSuffix) {
+                            msg[index] = msg[index] + modelSuffix;
+                        }
                         classNames.Add(msg[index]);
                     });
                     // 生成dictionary数据
