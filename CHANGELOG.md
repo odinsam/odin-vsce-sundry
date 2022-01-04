@@ -1,9 +1,13 @@
-## <small>2.1.1 (2021-12-16)</small>
+# Changelog
 
-* chore(release): 2.1.1 ([bea6444](https://github.com/odinsam/odin-vsce-sundry/commit/bea6444))
-* ✨ feat: add DbModel generate (odinsam) ([9eaa538](https://github.com/odinsam/odin-vsce-sundry/commit/9eaa538))
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [3.0.1](https://github.com/odinsam/odin-vsce-sundry/compare/v2.1.1...v3.0.1) (2022-01-04)
 
 
+### Bug Fixes
+
+* [odinsam] 前缀、后缀 命名bug ([06dacb7](https://github.com/odinsam/odin-vsce-sundry/commit/06dacb738deef3f1604755f12811fdbb3ed8c359))
 
 ## 2.1.0 (2021-12-16)
 
@@ -47,6 +51,3 @@
 * Initial commit ([872ab88](https://github.com/odinsam/odin-vsce-sundry/commit/872ab88))
 * no message ([44c569a](https://github.com/odinsam/odin-vsce-sundry/commit/44c569a))
 * docs: [*] init ([8cdf8bd](https://github.com/odinsam/odin-vsce-sundry/commit/8cdf8bd))
-
-
-
