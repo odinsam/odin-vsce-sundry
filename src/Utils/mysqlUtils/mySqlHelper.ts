@@ -1,6 +1,6 @@
 import { error } from 'console';
-import dbConnectionSetting from '../Models/dbConnectionSetting';
-import resultModel from '../Models/resultModel';
+import dbConnectionSetting from '../../Models/dbConnectionSetting';
+import resultModel from '../../Models/resultModel';
 import connPool from './connPool';
 var mysql = require('mysql2');
 

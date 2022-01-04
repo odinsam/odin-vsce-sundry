@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import 'ts-replace-all';
-import transBigCamel from './transCamelUtils/transBigCamel';
-import transSmallCamel from './transCamelUtils/transSmallCamel';
+import transBigCamel from './sundryUtils/transCamelUtils/transBigCamel';
+import transSmallCamel from './sundryUtils/transCamelUtils/transSmallCamel';
 import addFileByTemplate from './generateFile/addFileByTemplate';
 import { generateDbModels } from './generateFile/generateDbModels';
 
@@ -39,8 +39,8 @@ export function activate(context: vscode.ExtensionContext) {
                             'IApiService',
                             'ApiService',
                             'IAppService',
-                            'AppService'
-                            // 'DbModel'
+                            'AppService',
+                            'DbModel'
                         ],
                         {
                             //用于使选择器接受多个选择，如果为true，则结果为拾取数组。可选

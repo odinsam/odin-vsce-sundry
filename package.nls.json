@@ -8,5 +8,7 @@
     "sundry.configuration.generateFile.TemplateFiles.description": "TemplateFiles path",
     "sundry.configuration.generateFile.TemplatePlaceHold.description": "Template PlaceHold.type is string array.",
     "sundry.configuration.generateFile.TemplatePlaceHoldValue.description": "Template PlaceHold Value.type is string array.",
-    "sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting": "db connection settings"
+    "sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting": "db connection settings",
+    "sundry.generateFile.dbModel.splitChars.deprecationMessage": "database table split char",
+    "sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage": "generate model prefix and suffix string setting"
 }
