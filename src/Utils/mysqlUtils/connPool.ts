@@ -1,4 +1,4 @@
-import dbConnectionSetting from '../Models/dbConnectionSetting';
+import dbConnectionSetting from '../../Models/dbConnectionSetting';
 
 var mysql = require('mysql');
 const connPool = (dbSettings: dbConnectionSetting): any => {

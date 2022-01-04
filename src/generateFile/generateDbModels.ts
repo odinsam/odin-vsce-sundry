@@ -1,7 +1,10 @@
 import dbConnectionSetting from '../Models/dbConnectionSetting';
 import * as vscode from 'vscode';
-import mySqlHelper from '../mysqlUtils/mysqlHelper';
+import mySqlHelper from '../Utils/mysqlUtils/mysqlHelper';
 import { List } from 'linqts';
+import '../Utils/stringUtils/stringExtension';
+import prefixSuffixString from '../Models/prefixSuffixString';
+import addDbModelByTemplate from './addDbModelByTemplate';
 const generateDbModels = (currentUri: string) => {
     const dbSettings = vscode.workspace
         .getConfiguration()
@@ -19,7 +22,6 @@ const generateDbModels = (currentUri: string) => {
             const element = results[index]['TABLE_NAME'];
             lstResult.Add(element);
         }
-        console.log(lstResult);
         // 弹出选择对话框，选择对应需要添加的文件类型
         vscode.window
             .showQuickPick(lstResult.ToArray(), {
@@ -37,7 +39,65 @@ const generateDbModels = (currentUri: string) => {
                 title: '请选择你要添加的文件'
             })
             .then(function (msg) {
-                console.log(msg?.length);
+                let result: { [key: string]: string } = {};
+                let tables: List<string> = new List<string>();
+                let classNames: List<string> = new List<string>();
+                if (msg!.length > 0) {
+                    var prefixSuffix = vscode.workspace
+                        .getConfiguration()
+                        .get<prefixSuffixString>(
+                            'sundry.generateFile.dbModel.prefixSuffixString'
+                        );
+
+                    const prefixs = new List<string>(prefixSuffix?.prefix);
+                    const suffixs = new List<string>(prefixSuffix?.suffix);
+                    //前缀 后缀处理
+                    msg?.map((m, index) => {
+                        tables.Add(m);
+                        if (prefixSuffix?.isKeepPrefix == false) {
+                            prefixSuffix?.prefix.map((x) => {
+                                if (m.startsWith(x))
+                                    msg[index] = m.replace(x, '');
+                            });
+                        }
+                        if (prefixSuffix?.isKeepSuffix == false) {
+                            prefixSuffix?.suffix.map((x) => {
+                                if (m.startsWith(x))
+                                    msg[index] = m.replace(x, '');
+                            });
+                        }
+                    });
+                    // 驼峰命名处理
+                    msg?.map((m, index) => {
+                        let result = m
+                            .replaceAllChars(
+                                vscode.workspace
+                                    .getConfiguration()
+                                    .get<Array<string>>(
+                                        'sundry.generateFile.dbModel.splitChars'
+                                    )!,
+                                ' '
+                            )
+                            .split(' ');
+                        result.map((item, iindex) => {
+                            result[iindex] = item.firstCharToUpper();
+                        });
+
+                        msg[index] = result.join('');
+                        classNames.Add(msg[index]);
+                    });
+                    // 生成dictionary数据
+                    msg?.map((m, index) => {
+                        result[tables.ElementAt(index)] =
+                            classNames.ElementAt(index);
+                    });
+                    // 生成文件路径
+                    let uriPath = currentUri.toString().startsWith('file://')
+                        ? currentUri.toString().replace('file://', '')
+                        : currentUri.toString();
+                    // 生成 dbmodel 文件
+                    addDbModelByTemplate(result, uriPath);
+                }
             });
     });
 };
