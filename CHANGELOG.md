@@ -1,3 +1,19 @@
+## 3.1.0 (2022-01-11)
+
+* chore(release): 3.1.0 ([4903b04](https://github.com/odinsam/odin-vsce-sundry/commit/4903b04))
+* feat: [odinsam] add change namespace ([8ed71ad](https://github.com/odinsam/odin-vsce-sundry/commit/8ed71ad))
+
+
+
+## <small>3.0.1 (2022-01-04)</small>
+
+* chore(release): 3.0.1 ([a082db5](https://github.com/odinsam/odin-vsce-sundry/commit/a082db5))
+* fix: [odinsam] 前缀、后缀 命名bug ([06dacb7](https://github.com/odinsam/odin-vsce-sundry/commit/06dacb7))
+* ✨ feat: 添加 dbModel 的生成 (odinsam) ([662d324](https://github.com/odinsam/odin-vsce-sundry/commit/662d324))
+* 📃 docs: change log (odinsam) ([87c66bb](https://github.com/odinsam/odin-vsce-sundry/commit/87c66bb))
+
+
+
 ## <small>2.1.1 (2021-12-16)</small>
 
 * chore(release): 2.1.1 ([bea6444](https://github.com/odinsam/odin-vsce-sundry/commit/bea6444))

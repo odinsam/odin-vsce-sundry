@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "2.1.1",
+    "version": "3.1.0",
     "icon": "assets/avatar.png",
     "engines": {
         "vscode": "^1.50.0"
@@ -25,7 +25,8 @@
     "activationEvents": [
         "onCommand:sundry.transCamel.transBigCamel",
         "onCommand:sundry.transCamel.transSmallCamel",
-        "onCommand:sundry.generateFile.addFileByTemplate"
+        "onCommand:sundry.generateFile.addFileByTemplate",
+        "onCommand:sundry.changeNamespace"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -33,10 +34,14 @@
             "editor/context": [
                 {
                     "command": "sundry.transCamel.transBigCamel",
-                    "group": "z-command@2"
+                    "group": "z-command@3"
                 },
                 {
                     "command": "sundry.transCamel.transSmallCamel",
+                    "group": "z-command@2"
+                },
+                {
+                    "command": "sundry.changeNamespace",
                     "group": "z-command@1"
                 }
             ],
@@ -58,21 +63,17 @@
                 "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
             },
             {
+                "command": "sundry.changeNamespace",
+                "category": "Sundry.changeNamespace",
+                "title": "%sundry.changeNamespace%"
+            },
+            {
                 "command": "sundry.generateFile.addFileByTemplate",
                 "category": "sundry.generateFile",
                 "title": "%sundry.generateFile.addFileByTemplate.Title%"
             }
         ],
-        "keybindings": [
-            {
-                "command": "sundry.transCamel.transBigCamel",
-                "key": "cmd+t cmd+b"
-            },
-            {
-                "command": "sundry.transCamel.transSmallCamel",
-                "key": "cmd+t cmd+s"
-            }
-        ],
+        "keybindings": [],
         "configuration": {
             "type": "object",
             "title": "%sundry.configuration.title%",
@@ -101,11 +102,11 @@
                     "type": "object",
                     "default": {
                         "dbType": "mySql",
-                        "host": "121.42.15.95",
+                        "host": "x.x.x.x",
                         "port": 3306,
                         "userName": "root",
-                        "pwd": "173mysqlodincore~",
-                        "dataBase": "dbOdinCore"
+                        "pwd": "xxxxx",
+                        "dataBase": "xxxx"
                     },
                     "description": "%sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting%"
                 },
@@ -122,6 +123,34 @@
                         ""
                     ],
                     "description": "%sundry.configuration.generateFile.TemplatePlaceHoldValue.description%"
+                },
+                "sundry.generateFile.dbModel.splitChars": {
+                    "type": "array",
+                    "default": [
+                        "_",
+                        "-",
+                        "."
+                    ],
+                    "items": [
+                        "_",
+                        "-",
+                        "."
+                    ],
+                    "description": "%sundry.generateFile.dbModel.splitChars.deprecationMessage%"
+                },
+                "sundry.generateFile.dbModel.prefixSuffixString": {
+                    "type": "object",
+                    "default": {
+                        "prefix": [
+                            "tb"
+                        ],
+                        "addPrefix": "",
+                        "suffix": [],
+                        "addSuffix": "",
+                        "isKeepPrefix": false,
+                        "isKeepSuffix": false
+                    },
+                    "description": "%sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage%"
                 }
             }
         }
