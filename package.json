@@ -25,7 +25,8 @@
     "activationEvents": [
         "onCommand:sundry.transCamel.transBigCamel",
         "onCommand:sundry.transCamel.transSmallCamel",
-        "onCommand:sundry.generateFile.addFileByTemplate"
+        "onCommand:sundry.generateFile.addFileByTemplate",
+        "onCommand:sundry.changeNamespace"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -33,10 +34,14 @@
             "editor/context": [
                 {
                     "command": "sundry.transCamel.transBigCamel",
-                    "group": "z-command@2"
+                    "group": "z-command@3"
                 },
                 {
                     "command": "sundry.transCamel.transSmallCamel",
+                    "group": "z-command@2"
+                },
+                {
+                    "command": "sundry.changeNamespace",
                     "group": "z-command@1"
                 }
             ],
@@ -58,21 +63,17 @@
                 "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
             },
             {
+                "command": "sundry.changeNamespace",
+                "category": "Sundry.changeNamespace",
+                "title": "%sundry.changeNamespace%"
+            },
+            {
                 "command": "sundry.generateFile.addFileByTemplate",
                 "category": "sundry.generateFile",
                 "title": "%sundry.generateFile.addFileByTemplate.Title%"
             }
         ],
-        "keybindings": [
-            {
-                "command": "sundry.transCamel.transBigCamel",
-                "key": "cmd+t cmd+b"
-            },
-            {
-                "command": "sundry.transCamel.transSmallCamel",
-                "key": "cmd+t cmd+s"
-            }
-        ],
+        "keybindings": [],
         "configuration": {
             "type": "object",
             "title": "%sundry.configuration.title%",
