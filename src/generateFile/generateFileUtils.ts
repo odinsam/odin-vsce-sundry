@@ -6,7 +6,7 @@ const GetCurrentDirectory = (stats: any, uriPath: string): string => {
 };
 const GetPath = function (aryString: string[], index: number) {
     var path = '';
-    for (var i = 0; i <= index; i++) {
+    for (let i = 0; i <= index; i++) {
         path += aryString[i];
         if (i < index) path += '/';
     }
