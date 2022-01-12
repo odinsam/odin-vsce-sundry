@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "3.1.0",
+    "version": "4.0.1",
     "icon": "assets/avatar.png",
     "engines": {
         "vscode": "^1.50.0"
