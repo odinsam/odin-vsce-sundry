@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand(
             'sundry.changeNamespace',
             async (uri) => {
-                await changeNamespace(uri.toString());
+                await changeNamespace(uri.path);
             }
         )
     );
