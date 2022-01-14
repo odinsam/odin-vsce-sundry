@@ -11,5 +11,6 @@
     "sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting": "db connection settings",
     "sundry.generateFile.dbModel.splitChars.deprecationMessage": "database table split char",
     "sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage": "generate model prefix and suffix string setting",
-    "sundry.changeNamespace": "change namespace"
+    "sundry.changeNamespace": "change namespace",
+    "sundry.transCamel.transSplitStr.commandTitle": "split string"
 }

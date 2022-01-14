@@ -5,6 +5,7 @@ declare global {
         firstCharToLower(): string;
         transBigCamel(splitChars: string[]): string;
         transSmallCamel(splitChars: string[]): string;
+        transSplitStr(splitChars: string): string;
     }
 }
 
