@@ -1,5 +1,9 @@
 import { List } from 'linqts';
-import { strTransBigCamel, strTransSmallCamel } from '../stringUtil';
+import {
+    strTransBigCamel,
+    strTransSmallCamel,
+    strTransSplit
+} from '../stringUtil';
 
 String.prototype.replaceAllChars = function (
     str: Array<string>,
@@ -31,6 +35,11 @@ String.prototype.transBigCamel = function (splitChars: string[]): string {
 String.prototype.transSmallCamel = function (splitChars: string[]): string {
     var str = String(this).toString();
     return strTransSmallCamel(str, splitChars);
+};
+
+String.prototype.transSplitStr = function (splitChar: string): string {
+    var str = String(this).toString();
+    return strTransSplit(str, splitChar);
 };
 
 export {};

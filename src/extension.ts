@@ -5,13 +5,23 @@ import transSmallCamel from './sundryUtils/transCamelUtils/transSmallCamel';
 import addFileByTemplate from './generateFile/addFileByTemplate';
 import { generateDbModels } from './generateFile/generateDbModels';
 import changeNamespace from './sundryUtils/changeNamespace';
+import transSplitStr from './sundryUtils/transSplitStr';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
         vscode.commands.registerCommand(
+            'sundry.transCamel.transSplitStr',
+            async () => {
+                await transSplitStr();
+            }
+        )
+    );
+
+    context.subscriptions.push(
+        vscode.commands.registerCommand(
             'sundry.changeNamespace',
             async (uri) => {
-                await changeNamespace(uri.toString());
+                await changeNamespace(uri.path);
             }
         )
     );

@@ -11,5 +11,6 @@
     "sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting": "数据库连接设置",
     "sundry.generateFile.dbModel.splitChars.deprecationMessage": "数据表命名分隔符",
     "sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage": "模型生成前缀、后缀字符串设置",
-    "sundry.changeNamespace": "快速修改命名空间"
+    "sundry.changeNamespace": "快速修改命名空间",
+    "sundry.transCamel.transSplitStr.commandTitle": "分割字符串"
 }

@@ -1,3 +1,19 @@
+## <small>4.0.2 (2022-01-14)</small>
+
+* chore(release): 4.0.2 ([9ecddc7](https://github.com/odinsam/odin-vsce-sundry/commit/9ecddc7))
+* 📃 docs: change log (odinsam) ([dcf05a4](https://github.com/odinsam/odin-vsce-sundry/commit/dcf05a4))
+
+
+
+## <small>4.0.1 (2022-01-12)</small>
+
+* chore(release): 4.0.1 ([05987ad](https://github.com/odinsam/odin-vsce-sundry/commit/05987ad))
+* 🐞 fix: 修改 获取命名空间的bug (odinsam) ([1af2c6e](https://github.com/odinsam/odin-vsce-sundry/commit/1af2c6e))
+* 📃 docs: change log (odinsam) ([94d5121](https://github.com/odinsam/odin-vsce-sundry/commit/94d5121))
+* 📃 docs: readme (odinsam) ([cecbb69](https://github.com/odinsam/odin-vsce-sundry/commit/cecbb69))
+
+
+
 ## 3.1.0 (2022-01-11)
 
 * chore(release): 3.1.0 ([4903b04](https://github.com/odinsam/odin-vsce-sundry/commit/4903b04))

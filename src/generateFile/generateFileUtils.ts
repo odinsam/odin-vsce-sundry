@@ -1,6 +1,6 @@
 const GetCurrentDirectory = (stats: any, uriPath: string): string => {
     if (!stats.isDirectory()) {
-        uriPath = uriPath.substr(0, uriPath.lastIndexOf('/') + 1);
+        uriPath = uriPath.substring(0, uriPath.lastIndexOf('/'));
     }
     return uriPath;
 };

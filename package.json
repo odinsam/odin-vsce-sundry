@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "3.1.0",
+    "version": "4.0.2",
     "icon": "assets/avatar.png",
     "engines": {
         "vscode": "^1.50.0"
@@ -23,6 +23,7 @@
     },
     "homepage": "https://github.com/odinsam/odin-vsce-sundry#readme",
     "activationEvents": [
+        "onCommand:sundry.transCamel.transSplitStr",
         "onCommand:sundry.transCamel.transBigCamel",
         "onCommand:sundry.transCamel.transSmallCamel",
         "onCommand:sundry.generateFile.addFileByTemplate",
@@ -32,6 +33,10 @@
     "contributes": {
         "menus": {
             "editor/context": [
+                {
+                    "command": "sundry.transCamel.transSplitStr",
+                    "group": "z-command@4"
+                },
                 {
                     "command": "sundry.transCamel.transBigCamel",
                     "group": "z-command@3"
@@ -53,6 +58,11 @@
         },
         "commands": [
             {
+                "command": "sundry.transCamel.transSplitStr",
+                "category": "Sundry.transCamel",
+                "title": "%sundry.transCamel.transSplitStr.commandTitle%"
+            },
+            {
                 "command": "sundry.transCamel.transBigCamel",
                 "category": "Sundry.transCamel",
                 "title": "%sundry.transCamel.transBigCamel.commandTitle%"
@@ -73,11 +83,38 @@
                 "title": "%sundry.generateFile.addFileByTemplate.Title%"
             }
         ],
-        "keybindings": [],
+        "keybindings": [
+            {
+                "command": "sundry.transCamel.transBigCamel",
+                "mac": "cmd+t cmd+b"
+            },
+            {
+                "command": "sundry.transCamel.transSmallCamel",
+                "mac": "cmd+t cmd+s"
+            },
+            {
+                "command": "sundry.transCamel.transSplitStr",
+                "mac": "cmd+t cmd+t"
+            }
+        ],
         "configuration": {
             "type": "object",
             "title": "%sundry.configuration.title%",
             "properties": {
+                "sundry.transSplitStr.splitChar": {
+                    "type": "string",
+                    "default": "-",
+                    "description": "%sundry.transCamel.transSplitStr.commandTitle%"
+                },
+                "sundry.transSplitStr.firstChar": {
+                    "type": "string",
+                    "default": "upper",
+                    "enum": [
+                        "upper",
+                        "lower"
+                    ],
+                    "description": "%sundry.transCamel.transSplitStr.commandTitle%"
+                },
                 "sundry.transCamel": {
                     "type": "array",
                     "default": [

@@ -1,3 +1,4 @@
+import { List } from 'linqts';
 import * as vscode from 'vscode';
 
 const strTransBigCamel = (str: string, splitChars: string[]) => {
@@ -38,4 +39,21 @@ const strTransSmallCamel = (str: string, splitChars: string[]) => {
     }
     return buildStr;
 };
-export { strTransBigCamel, strTransSmallCamel };
+const strTransSplit = (str: string, splitChars: string) => {
+    const reg = /[A-Za-z][a-z]+/g;
+    const arrayStr = str.match(reg);
+    let builder = new List<string>();
+    var splitChar = vscode.workspace
+        .getConfiguration()
+        .get<string>('sundry.transSplitStr.firstChar');
+    for (let index = 0; index < arrayStr!.length; index++) {
+        const element = arrayStr![index];
+        if (splitChar == 'upper') {
+            builder.Add(element.firstCharToUpper());
+        } else {
+            builder.Add(element.firstCharToLower());
+        }
+    }
+    return builder.ToArray().join(splitChars);
+};
+export { strTransBigCamel, strTransSmallCamel, strTransSplit };

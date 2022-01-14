@@ -4,6 +4,15 @@
 
 **简介:**
 
+### v4.0.1 新增字符串分割功能
+
+```json
+{
+    "sundry.transSplitStr.firstChar": "lower",
+    "sundry.transSplitStr.splitChar": "-"
+}
+```
+
 ### v3.1 新增快速获取当前文件的默认命名空间
 
 ### v3 新增 dbModel 的生成功能
