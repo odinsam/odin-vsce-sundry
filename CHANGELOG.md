@@ -1,3 +1,11 @@
+## <small>4.0.3 (2022-02-14)</small>
+
+* chore(release): 4.0.3 ([ca812d6](https://github.com/odinsam/odin-vsce-sundry/commit/ca812d6))
+* ✨ feat: 新增字符串分割功能 (odinsam) ([6e10143](https://github.com/odinsam/odin-vsce-sundry/commit/6e10143))
+* change log ([fe4ed46](https://github.com/odinsam/odin-vsce-sundry/commit/fe4ed46))
+
+
+
 ## <small>4.0.2 (2022-01-14)</small>
 
 * chore(release): 4.0.2 ([9ecddc7](https://github.com/odinsam/odin-vsce-sundry/commit/9ecddc7))

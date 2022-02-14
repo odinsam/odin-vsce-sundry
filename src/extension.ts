@@ -82,7 +82,7 @@ export function activate(context: vscode.ExtensionContext) {
                             return;
                         } else {
                             if (msg != 'DbModel') {
-                                const currentUri = uri.toString();
+                                const currentUri = uri.path.toString();
                                 // 添加文件类型
                                 const addFileType = msg;
                                 vscode.window
@@ -115,7 +115,7 @@ export function activate(context: vscode.ExtensionContext) {
                                         }
                                     });
                             } else {
-                                generateDbModels(uri);
+                                generateDbModels(uri.path.toString());
                             }
                         }
                     });
