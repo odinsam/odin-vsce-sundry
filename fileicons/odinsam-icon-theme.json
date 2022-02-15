@@ -1,5 +1,11 @@
 ﻿{
     "iconDefinitions": {
+        "_pic_file_dark": {
+            "iconPath": "./images/gif.svg"
+        },
+        "_eslint_file_dark": {
+            "iconPath": "./images/eslint.svg"
+        },
         "_xlsm_file_dark": {
             "iconPath": "./images/xlsm.svg"
         },
@@ -124,7 +130,12 @@
         "pem": "_pem_file_dark",
         "key": "_key_file_dark",
         "xls": "_xlsm_file_dark",
-        "xlsx": "_xlsm_file_dark"
+        "xlsx": "_xlsm_file_dark",
+        "jslint": "_eslint_file_dark",
+        "eslint": "_eslint_file_dark",
+        "jpg": "_pic_file_dark",
+        "jpeg": "_pic_file_dark",
+        "gif": "_pic_file_dark"
     },
     "fileNames": {},
     "folder": "_folder_dark",
