@@ -1,3 +1,18 @@
+## <small>4.0.5 (2022-02-15)</small>
+
+* chore(release): 4.0.5 ([74986d8](https://github.com/odinsam/odin-vsce-sundry/commit/74986d8))
+
+
+
+## <small>4.0.4 (2022-02-15)</small>
+
+* chore(release): 4.0.4 ([78d6760](https://github.com/odinsam/odin-vsce-sundry/commit/78d6760))
+* ✨ feat: 添加 icon theme (odinsam) ([1491c9e](https://github.com/odinsam/odin-vsce-sundry/commit/1491c9e))
+* 🐞 fix: 修改中文路径无法创建文件的bug (odinsam) ([37bc431](https://github.com/odinsam/odin-vsce-sundry/commit/37bc431))
+* change log ([1d8f0e7](https://github.com/odinsam/odin-vsce-sundry/commit/1d8f0e7))
+
+
+
 ## <small>4.0.3 (2022-02-14)</small>
 
 * chore(release): 4.0.3 ([ca812d6](https://github.com/odinsam/odin-vsce-sundry/commit/ca812d6))

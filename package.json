@@ -2,7 +2,7 @@
     "name": "odin-sundry",
     "displayName": "odin-sundry",
     "description": "vscode sundry extensions ",
-    "version": "4.0.3",
+    "version": "4.0.5",
     "icon": "assets/avatar.png",
     "engines": {
         "vscode": "^1.50.0"
@@ -31,6 +31,13 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
+        "iconThemes": [
+            {
+                "id": "odinsam",
+                "label": "odinSam'Theme imitation vs",
+                "path": "./fileicons/odinsam-icon-theme.json"
+            }
+        ],
         "menus": {
             "editor/context": [
                 {
