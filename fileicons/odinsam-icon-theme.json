@@ -1,5 +1,41 @@
 ﻿{
     "iconDefinitions": {
+        "_xlsm_file_dark": {
+            "iconPath": "./images/xlsm.svg"
+        },
+        "_pem_file_dark": {
+            "iconPath": "./images/pem.svg"
+        },
+        "_key_file_dark": {
+            "iconPath": "./images/key.svg"
+        },
+        "_p12_file_dark": {
+            "iconPath": "./images/p12.svg"
+        },
+        "_db_file_dark": {
+            "iconPath": "./images/db.svg"
+        },
+        "_sass_file_dark": {
+            "iconPath": "./images/sass.svg"
+        },
+        "_less_file_dark": {
+            "iconPath": "./images/less.svg"
+        },
+        "_tsx_file_dark": {
+            "iconPath": "./images/tsx.svg"
+        },
+        "_jsx_file_dark": {
+            "iconPath": "./images/jsx.svg"
+        },
+        "_ts_file_dark": {
+            "iconPath": "./images/ts.svg"
+        },
+        "_js_file_dark": {
+            "iconPath": "./images/js.svg"
+        },
+        "_yml_file_dark": {
+            "iconPath": "./images/yml.svg"
+        },
         "_doc_folder_dark": {
             "iconPath": "./images/doc_on_doc.svg"
         },
@@ -66,13 +102,29 @@
         "json": "_json_file_dark",
         "dll": "_dll_file_dark",
         "xml": "_xml_file_dark",
+        "xaml": "_xml_file_dark",
         "props": "_xml_file_dark",
         "dockerignore": "_docker_folder_dark",
         "gitignore": "_git_folder_dark",
+        "gitattributes": "_git_folder_dark",
         "ps1": "_powershell_folder_dark",
         "png": "_png_folder_dark",
         "txt": "_txt_folder_dark",
-        "md": "_markdown_folder_dark"
+        "md": "_markdown_folder_dark",
+        "yml": "_yml_file_dark",
+        "yaml": "_yml_file_dark",
+        "js": "_js_file_dark",
+        "ts": "_ts_file_dark",
+        "jsx": "_jsx_file_dark",
+        "tsx": "_tsx_file_dark",
+        "less": "_less_file_dark",
+        "sass": "_sass_file_dark",
+        "db": "_db_file_dark",
+        "p12": "_p12_file_dark",
+        "pem": "_pem_file_dark",
+        "key": "_key_file_dark",
+        "xls": "_xlsm_file_dark",
+        "xlsx": "_xlsm_file_dark"
     },
     "fileNames": {},
     "folder": "_folder_dark",
