@@ -1,0 +1,88 @@
+﻿{
+    "iconDefinitions": {
+        "_doc_folder_dark": {
+            "iconPath": "./images/doc_on_doc.svg"
+        },
+        "_doc_folder_fill_dark": {
+            "iconPath": "./images/doc_on_doc_fill.svg"
+        },
+        "_bin_folder_dark": {
+            "iconPath": "./images/bin2.svg"
+        },
+        "_markdown_folder_dark": {
+            "iconPath": "./images/markdown.svg"
+        },
+        "_txt_folder_dark": {
+            "iconPath": "./images/txt.svg"
+        },
+        "_png_folder_dark": {
+            "iconPath": "./images/png.svg"
+        },
+        "_powershell_folder_dark": {
+            "iconPath": "./images/powershell.svg"
+        },
+        "_git_folder_dark": {
+            "iconPath": "./images/git.svg"
+        },
+        "_docker_folder_dark": {
+            "iconPath": "./images/docker.svg"
+        },
+        "_services_folder_dark": {
+            "iconPath": "./images/services.svg"
+        },
+        "_certificate_file_dark": {
+            "iconPath": "./images/certificate.svg"
+        },
+        "_xml_file_dark": {
+            "iconPath": "./images/xml.svg"
+        },
+        "_dll_file_dark": {
+            "iconPath": "./images/dll.svg"
+        },
+        "_json_file_dark": {
+            "iconPath": "./images/json.svg"
+        },
+        "_csharp_file_dark": {
+            "iconPath": "./images/csharp.svg"
+        },
+        "_csproj_file_dark": {
+            "iconPath": "./images/csproj.svg"
+        },
+        "_folder_dark": {
+            "iconPath": "./images/folder.svg"
+        },
+        "_folder-open_dark": {
+            "iconPath": "./images/folder-open.svg"
+        },
+        "_debug_folder_dark": {
+            "iconPath": "./images/debug.svg"
+        }
+    },
+    "file": "_csproj_folder_dark",
+    "fileExtensions": {
+        "cs": "_csharp_file_dark",
+        "sln": "_csproj_file_dark",
+        "csproj": "_csproj_file_dark",
+        "json": "_json_file_dark",
+        "dll": "_dll_file_dark",
+        "xml": "_xml_file_dark",
+        "props": "_xml_file_dark",
+        "dockerignore": "_docker_folder_dark",
+        "gitignore": "_git_folder_dark",
+        "ps1": "_powershell_folder_dark",
+        "png": "_png_folder_dark",
+        "txt": "_txt_folder_dark",
+        "md": "_markdown_folder_dark"
+    },
+    "fileNames": {},
+    "folder": "_folder_dark",
+    "folderExpanded": "_folder-open_dark",
+    "folderNames": {
+        ".vscode": "_folder_dark",
+        "debug": "_debug_folder_dark"
+    },
+    "folderNamesExpanded": {
+        ".vscode": "_folder-open_dark",
+        "debug": "_debug_folder_dark"
+    }
+}

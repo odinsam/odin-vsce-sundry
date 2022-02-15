@@ -31,6 +31,13 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
+        "iconThemes": [
+            {
+                "id": "odinsam",
+                "label": "odinSam'Theme imitation vs",
+                "path": "./fileicons/odinsam-icon-theme.json"
+            }
+        ],
         "menus": {
             "editor/context": [
                 {
