@@ -1,5 +1,8 @@
 ﻿{
     "iconDefinitions": {
+        "_html_file_dark": {
+            "iconPath": "./images/htm.svg"
+        },
         "_pic_file_dark": {
             "iconPath": "./images/gif.svg"
         },
@@ -102,6 +105,8 @@
     },
     "file": "_csproj_folder_dark",
     "fileExtensions": {
+        "html": "_html_file_dark",
+        "htm": "_html_file_dark",
         "cs": "_csharp_file_dark",
         "sln": "_csproj_file_dark",
         "csproj": "_csproj_file_dark",
