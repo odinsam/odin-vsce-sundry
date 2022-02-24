@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.8](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.7...v4.0.8) (2022-02-24)
+
+
+### Bug Fixes
+
+* [odinsam] add html file icon ([9d82e20](https://github.com/odinsam/odin-vsce-sundry/commit/9d82e20f2397639afd4e50996e1f1eb67fb74ff1))
+
 ### [4.0.7](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.6...v4.0.7) (2022-02-15)
 
 ### [4.0.6](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.5...v4.0.6) (2022-02-15)
