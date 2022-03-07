@@ -1,19 +1,72 @@
-# Changelog
+## <small>4.0.9 (2022-03-07)</small>
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### [4.0.9](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.8...v4.0.9) (2022-03-07)
-
-### [4.0.8](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.7...v4.0.8) (2022-02-24)
+* chore(release): 4.0.9 ([59db06d](https://github.com/odinsam/odin-vsce-sundry/commit/59db06d))
+* ✨ feat: edit cs add css ico map () ([9868d0d](https://github.com/odinsam/odin-vsce-sundry/commit/9868d0d))
 
 
-### Bug Fixes
 
-* [odinsam] add html file icon ([9d82e20](https://github.com/odinsam/odin-vsce-sundry/commit/9d82e20f2397639afd4e50996e1f1eb67fb74ff1))
+## <small>4.0.8 (2022-02-24)</small>
 
-### [4.0.7](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.6...v4.0.7) (2022-02-15)
+* chore(release): 4.0.8 ([b8ed843](https://github.com/odinsam/odin-vsce-sundry/commit/b8ed843))
+* fix: [odinsam] add html file icon ([9d82e20](https://github.com/odinsam/odin-vsce-sundry/commit/9d82e20))
 
-### [4.0.6](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.5...v4.0.6) (2022-02-15)
+
+
+## <small>4.0.7 (2022-02-15)</small>
+
+* chore(release): 4.0.7 ([faf12a5](https://github.com/odinsam/odin-vsce-sundry/commit/faf12a5))
+* add some icon ([99a55f7](https://github.com/odinsam/odin-vsce-sundry/commit/99a55f7))
+
+
+
+## <small>4.0.6 (2022-02-15)</small>
+
+* chore(release): 4.0.6 ([e07a307](https://github.com/odinsam/odin-vsce-sundry/commit/e07a307))
+* add readme ([67f105d](https://github.com/odinsam/odin-vsce-sundry/commit/67f105d))
+* add some icon ([0ac7e40](https://github.com/odinsam/odin-vsce-sundry/commit/0ac7e40))
+* change log ([e2da156](https://github.com/odinsam/odin-vsce-sundry/commit/e2da156))
+* change readme ([4d626e5](https://github.com/odinsam/odin-vsce-sundry/commit/4d626e5))
+
+
+
+## <small>4.0.5 (2022-02-15)</small>
+
+* chore(release): 4.0.5 ([74986d8](https://github.com/odinsam/odin-vsce-sundry/commit/74986d8))
+
+
+
+## <small>4.0.4 (2022-02-15)</small>
+
+* chore(release): 4.0.4 ([78d6760](https://github.com/odinsam/odin-vsce-sundry/commit/78d6760))
+* ✨ feat: 添加 icon theme (odinsam) ([1491c9e](https://github.com/odinsam/odin-vsce-sundry/commit/1491c9e))
+* 🐞 fix: 修改中文路径无法创建文件的bug (odinsam) ([37bc431](https://github.com/odinsam/odin-vsce-sundry/commit/37bc431))
+* change log ([1d8f0e7](https://github.com/odinsam/odin-vsce-sundry/commit/1d8f0e7))
+
+
+
+## <small>4.0.3 (2022-02-14)</small>
+
+* chore(release): 4.0.3 ([ca812d6](https://github.com/odinsam/odin-vsce-sundry/commit/ca812d6))
+* ✨ feat: 新增字符串分割功能 (odinsam) ([6e10143](https://github.com/odinsam/odin-vsce-sundry/commit/6e10143))
+* change log ([fe4ed46](https://github.com/odinsam/odin-vsce-sundry/commit/fe4ed46))
+
+
+
+## <small>4.0.2 (2022-01-14)</small>
+
+* chore(release): 4.0.2 ([9ecddc7](https://github.com/odinsam/odin-vsce-sundry/commit/9ecddc7))
+* 📃 docs: change log (odinsam) ([dcf05a4](https://github.com/odinsam/odin-vsce-sundry/commit/dcf05a4))
+
+
+
+## <small>4.0.1 (2022-01-12)</small>
+
+* chore(release): 4.0.1 ([05987ad](https://github.com/odinsam/odin-vsce-sundry/commit/05987ad))
+* 🐞 fix: 修改 获取命名空间的bug (odinsam) ([1af2c6e](https://github.com/odinsam/odin-vsce-sundry/commit/1af2c6e))
+* 📃 docs: change log (odinsam) ([94d5121](https://github.com/odinsam/odin-vsce-sundry/commit/94d5121))
+* 📃 docs: readme (odinsam) ([cecbb69](https://github.com/odinsam/odin-vsce-sundry/commit/cecbb69))
+
+
 
 ## 3.1.0 (2022-01-11)
 
@@ -80,3 +133,6 @@ All notable changes to this project will be documented in this file. See [standa
 * Initial commit ([872ab88](https://github.com/odinsam/odin-vsce-sundry/commit/872ab88))
 * no message ([44c569a](https://github.com/odinsam/odin-vsce-sundry/commit/44c569a))
 * docs: [*] init ([8cdf8bd](https://github.com/odinsam/odin-vsce-sundry/commit/8cdf8bd))
+
+
+
