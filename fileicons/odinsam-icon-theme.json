@@ -1,5 +1,14 @@
 ﻿{
     "iconDefinitions": {
+        "_ico_file_dark": {
+            "iconPath": "./images/ico.svg"
+        },
+        "_map_file_dark": {
+            "iconPath": "./images/map.svg"
+        },
+        "_css_file_dark": {
+            "iconPath": "./images/css.svg"
+        },
         "_html_file_dark": {
             "iconPath": "./images/htm.svg"
         },
@@ -103,8 +112,12 @@
             "iconPath": "./images/debug.svg"
         }
     },
-    "file": "_csproj_folder_dark",
+    "file": "_dll_file_dark",
     "fileExtensions": {
+        "ico": "_ico_file_dark",
+        "icon": "_ico_file_dark",
+        "map": "_map_file_dark",
+        "css": "_css_file_dark",
         "html": "_html_file_dark",
         "htm": "_html_file_dark",
         "cs": "_csharp_file_dark",
@@ -113,6 +126,7 @@
         "json": "_json_file_dark",
         "dll": "_dll_file_dark",
         "xml": "_xml_file_dark",
+        "targets": "_xml_file_dark",
         "xaml": "_xml_file_dark",
         "props": "_xml_file_dark",
         "dockerignore": "_docker_folder_dark",
