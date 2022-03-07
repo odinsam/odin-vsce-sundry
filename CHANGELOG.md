@@ -1,3 +1,34 @@
+## <small>4.0.9 (2022-03-07)</small>
+
+* chore(release): 4.0.9 ([59db06d](https://github.com/odinsam/odin-vsce-sundry/commit/59db06d))
+* ✨ feat: edit cs add css ico map () ([9868d0d](https://github.com/odinsam/odin-vsce-sundry/commit/9868d0d))
+
+
+
+## <small>4.0.8 (2022-02-24)</small>
+
+* chore(release): 4.0.8 ([b8ed843](https://github.com/odinsam/odin-vsce-sundry/commit/b8ed843))
+* fix: [odinsam] add html file icon ([9d82e20](https://github.com/odinsam/odin-vsce-sundry/commit/9d82e20))
+
+
+
+## <small>4.0.7 (2022-02-15)</small>
+
+* chore(release): 4.0.7 ([faf12a5](https://github.com/odinsam/odin-vsce-sundry/commit/faf12a5))
+* add some icon ([99a55f7](https://github.com/odinsam/odin-vsce-sundry/commit/99a55f7))
+
+
+
+## <small>4.0.6 (2022-02-15)</small>
+
+* chore(release): 4.0.6 ([e07a307](https://github.com/odinsam/odin-vsce-sundry/commit/e07a307))
+* add readme ([67f105d](https://github.com/odinsam/odin-vsce-sundry/commit/67f105d))
+* add some icon ([0ac7e40](https://github.com/odinsam/odin-vsce-sundry/commit/0ac7e40))
+* change log ([e2da156](https://github.com/odinsam/odin-vsce-sundry/commit/e2da156))
+* change readme ([4d626e5](https://github.com/odinsam/odin-vsce-sundry/commit/4d626e5))
+
+
+
 ## <small>4.0.5 (2022-02-15)</small>
 
 * chore(release): 4.0.5 ([74986d8](https://github.com/odinsam/odin-vsce-sundry/commit/74986d8))
