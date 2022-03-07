@@ -1,5 +1,11 @@
 ﻿{
     "iconDefinitions": {
+        "_svg_file_dark": {
+            "iconPath": "./images/svg.svg"
+        },
+        "_sql_file_dark": {
+            "iconPath": "./images/sql.svg"
+        },
         "_ico_file_dark": {
             "iconPath": "./images/ico.svg"
         },
@@ -114,6 +120,8 @@
     },
     "file": "_dll_file_dark",
     "fileExtensions": {
+        "svg": "_svg_file_dark",
+        "sql": "_sql_file_dark",
         "ico": "_ico_file_dark",
         "icon": "_ico_file_dark",
         "map": "_map_file_dark",
