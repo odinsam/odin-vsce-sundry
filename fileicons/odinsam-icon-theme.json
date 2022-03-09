@@ -1,5 +1,11 @@
 ﻿{
     "iconDefinitions": {
+        "_lit_file_dark": {
+            "iconPath": "./images/lit.svg"
+        },
+        "_ini_file_dark": {
+            "iconPath": "./images/ini.svg"
+        },
         "_svg_file_dark": {
             "iconPath": "./images/svg.svg"
         },
@@ -120,6 +126,10 @@
     },
     "file": "_dll_file_dark",
     "fileExtensions": {
+        "babelrc": "_json_file_dark",
+        "editorconfig": "_ini_file_dark",
+        "ini": "_ini_file_dark",
+        "eslintignore": "_txt_file_dark",
         "svg": "_svg_file_dark",
         "sql": "_sql_file_dark",
         "ico": "_ico_file_dark",
@@ -164,7 +174,10 @@
         "jpeg": "_pic_file_dark",
         "gif": "_pic_file_dark"
     },
-    "fileNames": {},
+    "fileNames": {
+        "LICENSE": "_lit_file_dark",
+        "Dockerfile": "_docker_folder_dark"
+    },
     "folder": "_folder_dark",
     "folderExpanded": "_folder-open_dark",
     "folderNames": {
