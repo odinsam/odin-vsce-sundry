@@ -66,34 +66,25 @@
         "_yml_file_dark": {
             "iconPath": "./images/yml.svg"
         },
-        "_doc_folder_dark": {
-            "iconPath": "./images/doc_on_doc.svg"
-        },
-        "_doc_folder_fill_dark": {
-            "iconPath": "./images/doc_on_doc_fill.svg"
-        },
-        "_bin_folder_dark": {
-            "iconPath": "./images/bin2.svg"
-        },
-        "_markdown_folder_dark": {
+        "_markdown_file_dark": {
             "iconPath": "./images/markdown.svg"
         },
-        "_txt_folder_dark": {
+        "_txt_file_dark": {
             "iconPath": "./images/txt.svg"
         },
-        "_png_folder_dark": {
+        "_png_file_dark": {
             "iconPath": "./images/png.svg"
         },
-        "_powershell_folder_dark": {
+        "_powershell_file_dark": {
             "iconPath": "./images/powershell.svg"
         },
-        "_git_folder_dark": {
+        "_git_file_dark": {
             "iconPath": "./images/git.svg"
         },
-        "_docker_folder_dark": {
+        "_docker_file_dark": {
             "iconPath": "./images/docker.svg"
         },
-        "_services_folder_dark": {
+        "_services_file_dark": {
             "iconPath": "./images/services.svg"
         },
         "_certificate_file_dark": {
@@ -122,6 +113,15 @@
         },
         "_debug_folder_dark": {
             "iconPath": "./images/debug.svg"
+        },
+        "_bin_folder_dark": {
+            "iconPath": "./images/bin2.svg"
+        },
+        "_doc_folder_dark": {
+            "iconPath": "./images/doc_on_doc.svg"
+        },
+        "_doc_folder_fill_dark": {
+            "iconPath": "./images/doc_on_doc_fill.svg"
         }
     },
     "file": "_dll_file_dark",
@@ -147,13 +147,13 @@
         "targets": "_xml_file_dark",
         "xaml": "_xml_file_dark",
         "props": "_xml_file_dark",
-        "dockerignore": "_docker_folder_dark",
-        "gitignore": "_git_folder_dark",
-        "gitattributes": "_git_folder_dark",
-        "ps1": "_powershell_folder_dark",
-        "png": "_png_folder_dark",
-        "txt": "_txt_folder_dark",
-        "md": "_markdown_folder_dark",
+        "dockerignore": "_docker_file_dark",
+        "gitignore": "_git_file_dark",
+        "gitattributes": "_git_file_dark",
+        "ps1": "_powershell_file_dark",
+        "png": "_png_file_dark",
+        "txt": "_txt_file_dark",
+        "md": "_markdown_file_dark",
         "yml": "_yml_file_dark",
         "yaml": "_yml_file_dark",
         "js": "_js_file_dark",
@@ -176,7 +176,7 @@
     },
     "fileNames": {
         "LICENSE": "_lit_file_dark",
-        "Dockerfile": "_docker_folder_dark"
+        "Dockerfile": "_docker_file_dark"
     },
     "folder": "_folder_dark",
     "folderExpanded": "_folder-open_dark",
