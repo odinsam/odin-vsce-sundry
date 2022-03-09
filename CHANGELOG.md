@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.12](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.11...v4.0.12) (2022-03-09)
+
 ### [4.0.11](https://github.com/odinsam/odin-vsce-sundry/compare/v4.0.10...v4.0.11) (2022-03-09)
 
 ## 3.1.0 (2022-01-11)
