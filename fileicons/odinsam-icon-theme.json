@@ -1,5 +1,8 @@
 ﻿{
     "iconDefinitions": {
+        "_vue_file_dark": {
+            "iconPath": "./images/vue.svg"
+        },
         "_lit_file_dark": {
             "iconPath": "./images/lit.svg"
         },
@@ -126,6 +129,7 @@
     },
     "file": "_dll_file_dark",
     "fileExtensions": {
+        "vue": "_vue_file_dark",
         "babelrc": "_json_file_dark",
         "editorconfig": "_ini_file_dark",
         "ini": "_ini_file_dark",
