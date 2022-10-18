@@ -1,233 +1,233 @@
 {
-    "name": "odin-sundry",
-    "displayName": "odin-sundry",
-    "description": "vscode sundry extensions ",
-    "version": "4.0.15",
-    "icon": "assets/avatar.png",
-    "engines": {
-        "vscode": "^1.50.0"
-    },
-    "categories": [
-        "Other"
+  "name": "odin-sundry",
+  "displayName": "odin-sundry",
+  "description": "vscode sundry extensions ",
+  "version": "4.0.18",
+  "icon": "assets/avatar.png",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odinsam/odin-vsce-sundry.git"
+  },
+  "publisher": "odinsam",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odinsam/odin-vsce-sundry/issues"
+  },
+  "homepage": "https://github.com/odinsam/odin-vsce-sundry#readme",
+  "activationEvents": [
+    "onCommand:sundry.transCamel.transSplitStr",
+    "onCommand:sundry.transCamel.transBigCamel",
+    "onCommand:sundry.transCamel.transSmallCamel",
+    "onCommand:sundry.generateFile.addFileByTemplate",
+    "onCommand:sundry.changeNamespace"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "odinsam",
+        "label": "odinSam'Theme imitation vs",
+        "path": "./fileicons/odinsam-icon-theme.json"
+      }
     ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/odinsam/odin-vsce-sundry"
-    },
-    "publisher": "odinsam",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/odinsam/odin-vsce-sundry/issues"
-    },
-    "homepage": "https://github.com/odinsam/odin-vsce-sundry#readme",
-    "activationEvents": [
-        "onCommand:sundry.transCamel.transSplitStr",
-        "onCommand:sundry.transCamel.transBigCamel",
-        "onCommand:sundry.transCamel.transSmallCamel",
-        "onCommand:sundry.generateFile.addFileByTemplate",
-        "onCommand:sundry.changeNamespace"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "iconThemes": [
-            {
-                "id": "odinsam",
-                "label": "odinSam'Theme imitation vs",
-                "path": "./fileicons/odinsam-icon-theme.json"
-            }
-        ],
-        "menus": {
-            "editor/context": [
-                {
-                    "command": "sundry.transCamel.transSplitStr",
-                    "group": "z-command@4"
-                },
-                {
-                    "command": "sundry.transCamel.transBigCamel",
-                    "group": "z-command@3"
-                },
-                {
-                    "command": "sundry.transCamel.transSmallCamel",
-                    "group": "z-command@2"
-                },
-                {
-                    "command": "sundry.changeNamespace",
-                    "group": "z-command@1"
-                }
-            ],
-            "explorer/context": [
-                {
-                    "command": "sundry.generateFile.addFileByTemplate"
-                }
-            ]
+    "menus": {
+      "editor/context": [
+        {
+          "command": "sundry.transCamel.transSplitStr",
+          "group": "z-command@4"
         },
-        "commands": [
-            {
-                "command": "sundry.transCamel.transSplitStr",
-                "category": "Sundry.transCamel",
-                "title": "%sundry.transCamel.transSplitStr.commandTitle%"
-            },
-            {
-                "command": "sundry.transCamel.transBigCamel",
-                "category": "Sundry.transCamel",
-                "title": "%sundry.transCamel.transBigCamel.commandTitle%"
-            },
-            {
-                "command": "sundry.transCamel.transSmallCamel",
-                "category": "Sundry.transCamel",
-                "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
-            },
-            {
-                "command": "sundry.changeNamespace",
-                "category": "Sundry.changeNamespace",
-                "title": "%sundry.changeNamespace%"
-            },
-            {
-                "command": "sundry.generateFile.addFileByTemplate",
-                "category": "sundry.generateFile",
-                "title": "%sundry.generateFile.addFileByTemplate.Title%"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "sundry.transCamel.transBigCamel",
-                "mac": "cmd+t cmd+b"
-            },
-            {
-                "command": "sundry.transCamel.transSmallCamel",
-                "mac": "cmd+t cmd+s"
-            },
-            {
-                "command": "sundry.transCamel.transSplitStr",
-                "mac": "cmd+t cmd+t"
-            }
-        ],
-        "configuration": {
-            "type": "object",
-            "title": "%sundry.configuration.title%",
-            "properties": {
-                "sundry.transSplitStr.splitChar": {
-                    "type": "string",
-                    "default": "-",
-                    "description": "%sundry.transCamel.transSplitStr.commandTitle%"
-                },
-                "sundry.transSplitStr.firstChar": {
-                    "type": "string",
-                    "default": "upper",
-                    "enum": [
-                        "upper",
-                        "lower"
-                    ],
-                    "description": "%sundry.transCamel.transSplitStr.commandTitle%"
-                },
-                "sundry.transCamel": {
-                    "type": "array",
-                    "default": [
-                        " ",
-                        "-",
-                        ",",
-                        "."
-                    ],
-                    "items": [
-                        " ",
-                        "-",
-                        ",",
-                        "."
-                    ],
-                    "description": "%sundry.configuration.transCamel.deprecationMessage%"
-                },
-                "sundry.generateFile.TemplateFiles": {
-                    "type": "string",
-                    "description": "%sundry.configuration.generateFile.TemplateFiles.description%"
-                },
-                "sundry.generateFile.DbConnectionSetting": {
-                    "type": "object",
-                    "default": {
-                        "dbType": "mySql",
-                        "host": "x.x.x.x",
-                        "port": 3306,
-                        "userName": "root",
-                        "pwd": "xxxxx",
-                        "dataBase": "xxxx"
-                    },
-                    "description": "%sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting%"
-                },
-                "sundry.generateFile.TemplatePlaceHold": {
-                    "type": "array",
-                    "default": [
-                        ""
-                    ],
-                    "description": "%sundry.configuration.generateFile.TemplatePlaceHold.description%"
-                },
-                "sundry.generateFile.TemplatePlaceHoldValue": {
-                    "type": "array",
-                    "default": [
-                        ""
-                    ],
-                    "description": "%sundry.configuration.generateFile.TemplatePlaceHoldValue.description%"
-                },
-                "sundry.generateFile.dbModel.splitChars": {
-                    "type": "array",
-                    "default": [
-                        "_",
-                        "-",
-                        "."
-                    ],
-                    "items": [
-                        "_",
-                        "-",
-                        "."
-                    ],
-                    "description": "%sundry.generateFile.dbModel.splitChars.deprecationMessage%"
-                },
-                "sundry.generateFile.dbModel.prefixSuffixString": {
-                    "type": "object",
-                    "default": {
-                        "prefix": [
-                            "tb"
-                        ],
-                        "addPrefix": "",
-                        "suffix": [],
-                        "addSuffix": "",
-                        "isKeepPrefix": false,
-                        "isKeepSuffix": false
-                    },
-                    "description": "%sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage%"
-                }
-            }
+        {
+          "command": "sundry.transCamel.transBigCamel",
+          "group": "z-command@3"
+        },
+        {
+          "command": "sundry.transCamel.transSmallCamel",
+          "group": "z-command@2"
+        },
+        {
+          "command": "sundry.changeNamespace",
+          "group": "z-command@1"
         }
+      ],
+      "explorer/context": [
+        {
+          "command": "sundry.generateFile.addFileByTemplate"
+        }
+      ]
     },
-    "scripts": {
-        "vscode:prepublish": "yarn run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "pretest": "yarn run compile && yarn run lint",
-        "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js",
-        "build": "vsce package",
-        "release": "standard-version",
-        "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
-    },
-    "devDependencies": {
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.2.2",
-        "@types/node": "14.x",
-        "@types/vscode": "^1.50.0",
-        "@typescript-eslint/eslint-plugin": "^4.26.0",
-        "@typescript-eslint/parser": "^4.26.0",
-        "eslint": "^7.27.0",
-        "glob": "^7.1.7",
-        "mocha": "^8.4.0",
-        "standard-version": "^9.3.2",
-        "typescript": "^4.3.2",
-        "vscode-test": "^1.5.2"
-    },
-    "dependencies": {
-        "linqts": "^1.14.4",
-        "mysql": "^2.18.1",
-        "mysql2": "^2.3.3",
-        "ts-replace-all": "^1.0.0"
+    "commands": [
+      {
+        "command": "sundry.transCamel.transSplitStr",
+        "category": "Sundry.transCamel",
+        "title": "%sundry.transCamel.transSplitStr.commandTitle%"
+      },
+      {
+        "command": "sundry.transCamel.transBigCamel",
+        "category": "Sundry.transCamel",
+        "title": "%sundry.transCamel.transBigCamel.commandTitle%"
+      },
+      {
+        "command": "sundry.transCamel.transSmallCamel",
+        "category": "Sundry.transCamel",
+        "title": "%sundry.transCamel.transSmallCamel.commandTitle%"
+      },
+      {
+        "command": "sundry.changeNamespace",
+        "category": "Sundry.changeNamespace",
+        "title": "%sundry.changeNamespace%"
+      },
+      {
+        "command": "sundry.generateFile.addFileByTemplate",
+        "category": "sundry.generateFile",
+        "title": "%sundry.generateFile.addFileByTemplate.Title%"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "sundry.transCamel.transBigCamel",
+        "mac": "cmd+t cmd+b"
+      },
+      {
+        "command": "sundry.transCamel.transSmallCamel",
+        "mac": "cmd+t cmd+s"
+      },
+      {
+        "command": "sundry.transCamel.transSplitStr",
+        "mac": "cmd+t cmd+t"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "%sundry.configuration.title%",
+      "properties": {
+        "sundry.transSplitStr.splitChar": {
+          "type": "string",
+          "default": "-",
+          "description": "%sundry.transCamel.transSplitStr.commandTitle%"
+        },
+        "sundry.transSplitStr.firstChar": {
+          "type": "string",
+          "default": "upper",
+          "enum": [
+            "upper",
+            "lower"
+          ],
+          "description": "%sundry.transCamel.transSplitStr.commandTitle%"
+        },
+        "sundry.transCamel": {
+          "type": "array",
+          "default": [
+            " ",
+            "-",
+            ",",
+            "."
+          ],
+          "items": [
+            " ",
+            "-",
+            ",",
+            "."
+          ],
+          "description": "%sundry.configuration.transCamel.deprecationMessage%"
+        },
+        "sundry.generateFile.TemplateFiles": {
+          "type": "string",
+          "description": "%sundry.configuration.generateFile.TemplateFiles.description%"
+        },
+        "sundry.generateFile.DbConnectionSetting": {
+          "type": "object",
+          "default": {
+            "dbType": "mySql",
+            "host": "x.x.x.x",
+            "port": 3306,
+            "userName": "root",
+            "pwd": "xxxxx",
+            "dataBase": "xxxx"
+          },
+          "description": "%sundry.configuration.generateFile.TemplateFiles.DbConnectionSetting%"
+        },
+        "sundry.generateFile.TemplatePlaceHold": {
+          "type": "array",
+          "default": [
+            ""
+          ],
+          "description": "%sundry.configuration.generateFile.TemplatePlaceHold.description%"
+        },
+        "sundry.generateFile.TemplatePlaceHoldValue": {
+          "type": "array",
+          "default": [
+            ""
+          ],
+          "description": "%sundry.configuration.generateFile.TemplatePlaceHoldValue.description%"
+        },
+        "sundry.generateFile.dbModel.splitChars": {
+          "type": "array",
+          "default": [
+            "_",
+            "-",
+            "."
+          ],
+          "items": [
+            "_",
+            "-",
+            "."
+          ],
+          "description": "%sundry.generateFile.dbModel.splitChars.deprecationMessage%"
+        },
+        "sundry.generateFile.dbModel.prefixSuffixString": {
+          "type": "object",
+          "default": {
+            "prefix": [
+              "tb"
+            ],
+            "addPrefix": "",
+            "suffix": [],
+            "addSuffix": "",
+            "isKeepPrefix": false,
+            "isKeepSuffix": false
+          },
+          "description": "%sundry.generateFile.dbModel.prefixSuffixString.deprecationMessage%"
+        }
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "build": "vsce package",
+    "release": "standard-version",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.6.1"
+  },
+  "dependencies": {
+    "linqts": "^1.14.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "ts-replace-all": "^1.0.0"
+  }
 }

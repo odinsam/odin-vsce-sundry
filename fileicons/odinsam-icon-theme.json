@@ -1,5 +1,11 @@
 ﻿{
     "iconDefinitions": {
+        "_lock_file_dark": {
+            "iconPath": "./images/json.svg"
+        },
+        "_wxml_file_dark": {
+            "iconPath": "./images/wxml.svg"
+        },
         "_vue_file_dark": {
             "iconPath": "./images/vue.svg"
         },
@@ -129,6 +135,9 @@
     },
     "file": "_dll_file_dark",
     "fileExtensions": {
+        "lock": "_lock_file_dark",
+        "wxss": "_css_file_dark",
+        "wxml": "_wxml_file_dark",
         "vue": "_vue_file_dark",
         "babelrc": "_json_file_dark",
         "editorconfig": "_ini_file_dark",
